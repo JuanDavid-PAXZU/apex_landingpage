@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+
+
+
+</head>
+<body>
+
+    <!-- MODALS -->
+
+    <div class="modal_form" style="display: none;">
+        <span class="dark_bg"></span>
+        <div class="container_form">
+            <form action="">
+                
+                <div class="cont_input">
+                    <input type="text" placeholder="Nombre Completo">
+                </div>
+                <div class="cont_input">
+                    <input type="mail" placeholder="Corre">
+                </div>
+                <div class="cont_input">
+                    <input type="text" placeholder="Empresa">
+                </div>
+                <div class="cont_input">
+                    <input type="tel" placeholder="Teléfono">
+                </div>
+                <div class="cont_input">
+                    <input type="text" list="list" placeholder="Pais">
+                    <datalist id="list">
+                        <option value="Colombia1">Colombia1</option>
+                        <option value="Colombia2">Colombia2</option>
+                        <option value="Chile1">Chile1</option>
+                        <option value="Chile3">Chile3</option>
+                        <option value="peru">peru</option>
+                    </datalist>
+                </div>
+                <div class="cont_input">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="cont_check">
+                    <input type="checkbox" name="" id="agree">
+                    <label for="agree">Acepto los 
+                        <a href="">
+                            términos y condiciones
+                        </a> 
+                    </label>
+                </div>
+
+                <div class="cont_submit">
+                    <button type="submit">ENVIAR <span class="fas fa-chevron-right"></span> </button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    
+
+    <!--     ********* -->
+
+    
+    <header>
+        <div class="center">
+            <div class="header">
+                <picture class="main_logo">
+                    <svg version="1.1" id="logo-apex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1710.09 626.98" width="100%" height="100%">
+                        <!-- Background -->
+                        <rect x="0" y="0" fill="#3D4543" width="100%" height="100%" />
+    
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="200%" y2="0">
+                            <stop offset="0%" style="stop-color:#008EF4;"/>
+                            <stop offset="25%" style="stop-color:#00d2e5;"/>
+                            <stop offset="50%" style="stop-color:#00E586;"/>
+                            <stop offset="75%" style="stop-color:#00d2e5;"/>
+                            <stop offset="100%" style="stop-color:#008EF4;"/>
+                            
+                        </linearGradient>
+                          
+                          <!-- Stitch 2 gradients together for seamless animation  -->
+                        <pattern id="grad" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
+
+                            <rect x="0" y="0" width="250%" height="100%" fill="url(#gradient)">
+                                <animate attributeType="XML"
+                                        attributeName="x"
+                                        from="0" to="100%"
+                                        dur="20s"
+                                        repeatCount="indefinite"/>
+                            </rect>
+                            <rect x="-250%" y="0" width="250%" height="100%" fill="url(#gradient)">
+                                <animate attributeType="XML"
+                                        attributeName="x"
+                                        from="-100%" to="0"
+                                        dur="20s"
+                                        repeatCount="indefinite"/>
+                            </rect>
+
+                        </pattern>
+                        
+                            
+                                <path fill="url(#grad)" d="M207.28,0C92.81,0,0,91.97,0,205.42c0,113.46,92.81,205.44,207.28,205.44c32.39,0,63.04-7.36,90.36-20.48 v-71.13c0-8.62-9.59-11.91-14.82-8.23c-21.33,15.02-47.39,23.83-75.54,23.83c-72.11,0-130.57-57.93-130.57-129.43 C76.71,133.95,135.16,76,207.28,76c70.58,0,128.08,55.5,130.51,124.85c0.06,1.53,0,3.04,0,4.57c0,1.55,0.06,3.07,0,4.58v5.22 v195.64h76.78V215.23v-9.8C414.57,91.97,321.76,0,207.28,0z"/>
+                                
+                                    <path fill="url(#grad)" d="M1664.69,308.23c-4.69-4.67-10.4-2.69-12.73-0.87c-22.18,17.23-50.12,27.49-80.48,27.49 c-37.42,0-71.15-15.58-94.96-40.56c-1.43-1.51-2.81-3.04-4.18-4.62l-76.54-84.26l16.95-18.64l57.06-62.54l9.94-10.88 c21.59-21.14,50.57-34.87,82.77-37.04c2.95-0.2,8.98-2.46,8.98-9.74V0c-61.36,0-116.49,26.42-154.44,68.4l0.02-0.02l-72.89,80.23 l-74.4-81.88l-51.63,56.82l59.41,65.38l14.96,16.44l-77.97,85.83c-0.53,0.59-1.09,1.19-1.63,1.8 c-23.86,25.73-58.11,41.85-96.15,41.85c-58.77,0-108.45-38.46-124.86-91.36h90.32v-76.11h-90.32 c16.41-52.9,66.1-91.38,124.86-91.38c26.36,0,50.88,7.78,71.4,21.1l51.71-56.92C1205.44,14.94,1162.85,0,1116.76,0 c-61.39,0-116.56,26.46-154.52,68.5l0.02-0.12L822.74,221.92l-63.01,69.37c-0.5,0.55-1,1.1-1.5,1.66 c-23.87,25.76-58.13,41.9-96.21,41.9c-72.1,0-130.59-57.93-130.59-129.43C531.43,133.95,589.91,76,662.01,76 c68.93,0,125.36,52.93,130.25,120.01l61.8-68.03C823.2,52.91,748.85,0,662.01,0C547.53,0,454.73,91.97,454.73,205.42v421.56 l71.59-78.77c0,0,5.2-5.08,5.2-13.04c0-1.42,0-170.13,0-170.13c35.62,28.64,81.04,45.82,130.49,45.82 c60.83,0,115.52-25.94,153.43-67.27h0.03l96.5-106.23c15.47,98.3,101.26,173.5,204.79,173.5c60.82,0,115.53-25.98,153.47-67.31 l0.03,0.04h0.03l73.9-81.34l72.89,80.22l0,0c37.94,41.97,93.06,68.4,154.42,68.4c53.28,0,101.87-19.94,138.61-52.68
+                                    L1664.69,308.23z"/>
+                                
+                            
+                            <animate attributeType="XML" attributeName="x" from="-150%" to="0" dur="20s" repeatCount="indefinite"/>
+                        
+                    </svg>
+                    
+                </picture>
+                <nav class="main_navbar">
+                    <ul>
+                        <li>
+                            <a href=""><span class="fas fa-phone-alt"></span> <span class="txt_nb">+57 318 4115501</span></a>
+                        </li>
+                        <li>
+                            <a href=""><span class="fas fa-envelope-open"></span> <span class="txt_nb">comercialcol@apexamerica.com</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="spacer"></div>
+        <section class="hero">
+            <div class="center">
+                <div class="c_hero">
+                    <div class="col_hero">
+                        <h2 class="tit_section">
+                            Somos tu CX Partner
+                        </h2>
+                        <div>
+                            Sabemos entender, diseñar y gestionar las mejores experiencias de tus usuarios, aumentando la satisfacción del cliente, la lealtad de marca, y los ingresos de las compañías que nos confían a sus clientes.
+                        </div>
+                        <a href="" class="btn verde">
+                            CONTÁCTANOS
+                        </a>
+                    </div>
+                    <div class="img_hero">
+                        <img width="750" height="568" src="images/img_header.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="s_nosotros">
+            <div class="center">
+                <div class="c_nosotros">
+                    <h5 class="tag">POR QUÉ NOSOTROS</h5>
+                    <h2 class="tit_section">La mejor experiencia para tus clientes, sin fronteras.</h2>
+                    <div class="txt_desc">Desde hace 19 años somos partners estratégicos de grandes compañías gestionando su voz y la experiencia de sus usuarios en todos los canales analógicos y digitales.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="s_servicios">
+            <div class="center">
+                <div class="c_servicios">
+
+                    <h2 class="tit_section">
+                        Nuestros Servicios
+                    </h2>
+                
+                    <div class="services">
+                        <picture class="img_serv">
+                            <img width="520" height="330" src="images/serv1.png" alt="">
+                        </picture>
+                        <div class="desc_serv">
+                            <h5 class="tag c1">ANALISIS DE DATOS</h5>
+                            <h3 class="tit_serv">Advanced Speech &Text Analytics</h3>
+                            <h4 class="subtit_serv">Plataforma de CX Insights y data analytics </h4>
+                            <div class="txt_serv">Nuestra solución de Advanced Speech Analytics permite procesar y analizar audios y textos de las conversaciones de tus clientes. Identificamos patrones y categorías, extraemos insights de distintos comportamientos y acciones, como sentimientos, experiencias, manejo de objeciones y ventas, y los usamos para diseñar soluciones que potencien la relación con tus clientes.</div>
+                            <a href="" class="btn verde sm">CONOCE MÁS</a>
+                        </div>
+                    </div>
+
+                    <div class="services col-rtl">
+                        <picture class="img_serv">
+                            <img width="520" height="330" src="images/serv2.png" alt="">
+                        </picture>
+                        <div class="desc_serv">
+                            <h5 class="tag c2">Gestión Digital</h5>
+                            <h3 class="tit_serv">Monitoreo y Moderación de Redes Sociales</h3>
+                            <div class="txt_serv">Con nuestra herramienta y la experiencia de nuestros keepers, estamos al alcance de clasificar automáticamente los sentimientos de tus conversaciones, reconocer palabras desestructuradas, tener un contexto y patrones lingüísticos, realizar monitoreo, moderación y listening de tus canales digitales.</div>
+                            <a href="" class="btn verde sm">CONOCE MÁS</a>
+                        </div>
+                    </div>
+
+                    <div class="services">
+                        <picture class="img_serv">
+                            <img width="520" height="330" src="images/serv3.png" alt="">
+                        </picture>
+                        <div class="desc_serv">
+                            <h5 class="tag c3">Performance</h5>
+                            <h3 class="tit_serv">Way</h3>
+                            <h4 class="subtit_serv">Plataforma de Employee Experience y Performance con Speech Analytics</h4>
+                            <div class="txt_serv">Es nuestra plataforma centrada en la experiencia del colaborador. Es conversacional, inteligente y de autogestión, permite ordenar y focalizar los KPI’s del negocio y de la cultura de la compañía mediante un Modelo de Gestión específico.
+
+                            Esta plataforma permite tener una visión más clara e informada del día a día operativo para tomar acciones precisas, efectivas y rápidas.</div>
+                            <a href="" class="btn verde sm">CONOCE MÁS</a>
+                        </div>
+                    </div>
+
+                    <div class="services col-rtl">
+                        <picture class="img_serv">
+                            <img width="520" height="330" src="images/serv4.png" alt="">
+                        </picture>
+                        <div class="desc_serv">
+                            <h5 class="tag c4">AUTOMATIZACIÓN</h5>
+                            <h3 class="tit_serv">Alfred</h3>
+                            <h4 class="subtit_serv">Bot Conversacional con Inteligencia Artificial</h4>
+                            <div class="txt_serv">Nuestro chatbot conecta nuestra tecnología de inteligencia artificial y machine learning con toda la experiencia en CX para ofrecer una atención única, cercana y resolutiva en todos los canales digitales de tu compañía.
+
+                            Con el objetivo de automatizar y sin perder foco en la calidad, ofrecemos un servicio de excelencia junto a un equipo especializado en garantizar la mejor experiencia de usuario en todas las etapas del proceso.</div>
+                            <a href="" class="btn verde sm">CONOCE MÁS</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="s_beneficios">
+            <div class="center">
+                <div class="c_beneficios">
+                    <div class="col_bene">
+                        <div class="card">
+                            <picture>
+                                <img width="48" height="48" src="images/beneficio1.png" alt="">
+                            </picture>
+                            <h4>Insights para la toma de decisiones</h4>
+                            <div>Identificamos patrones y categorías, extraemos insights de distintos comportamientos y acciones, como sentimientos, experiencias, manejo de objeciones y ventas, y los usamos para diseñar soluciones que potencien la relación con tus clientes.</div>
+                        </div>
+                        <div class="card">
+                            <picture>
+                                <img width="48" height="48" src="images/beneficio2.png" alt="">
+                            </picture>
+                            <h4>Experiencia en aplicación de metodologías</h4>
+                            <div>Creamos nuestro modelo de gestión de clientes dividido en tres etapas fundamentales, Entender, Diseñar y Mejorar, basados en metodologías agiles como SCRUM, Design Thinking, SIT, entre otras.</div>
+                        </div>
+                        <div class="card">
+                            <picture>
+                                <img width="48" height="48" src="images/beneficio3.png" alt="">
+                            </picture>
+                            <h4>Modelo sistémico de excelencia operativa</h4>
+                            <div>Iteramos en búsqueda de la transformación de nuestras operaciones desde la identificación de problemas hasta la implementación, estabilización y estandarización de soluciones.</div>
+                        </div>
+                        <div class="card">
+                            <picture>
+                                <img width="48" height="48" src="images/beneficio4.png" alt="">
+                            </picture>
+                            <h4>Consultoría y acompañamiento</h4>
+                            <div>Ofrecemos un servicio de consultoría para el desarrollo e implementación de cualquiera de nuestras soluciones, con el propósito de identiﬁcar oportunidades de mejora en procesos, personas y tecnología.</div>
+                        </div>
+                    </div>
+                    <div class="col_desc_bene">
+                        <h5 class="tag c5">BENEFICIOS</h5>
+                        <h2 class="tit_section">
+                            Llevamos tu operación, al siguiente nivel
+                        </h2>
+                        <div class="txt_serv">
+                            Transformamos realidades creando experiencias extraordinarias, co-construiyendo soluciones innovadoras y sostenibles a la medida
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="s_clientes">
+            <div class="center">
+                <div class="c_clientes">
+                    <h2 class="tit_section">
+                        Nuestros Clientes
+                    </h2>
+                    <div class="slider_logos">
+                        <!-- Swiper -->
+                        <div class="swiper swiperLogos">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img width="100" height="100" src="images/logo1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img width="100" height="100" src="images/logo2.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img width="100" height="100" src="images/logo3.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img width="100" height="100" src="images/logo4.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img width="100" height="100" src="images/logo5.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img width="100" height="100" src="images/logo1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img width="100" height="100" src="images/logo2.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img width="100" height="100" src="images/logo3.png" alt="">
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+        <div class="center">
+            <div class="footer">
+                <picture>
+                    <img width="154" height="54" src="images/logo_footer.svg" alt="">
+                </picture>
+                <h1>Sabemos entender, diseñar y gestionar las mejores experiencias de tus usuarios, aumentando la satisfacción del cliente, la lealtad de marca, y los ingresos de las compañías que nos confían a sus clientes.
+                </h1>
+                <a href="" class="btn verde">
+                    CONTÁCTANOS
+                </a>
+            </div>
+            <div class="sub_footer">
+                <h5>Siguenos en nuestras redes:</h5>
+                <div class="redes_footer">
+                    <a href="" class="red_footer">
+                        <span class="fab fa-linkedin-in"></span>
+                    </a>
+                    <a href="" class="red_footer">
+                        <span class="fab fa-facebook-f"></span>
+                    </a>
+                    <a href="" class="red_footer">
+                        <span class="fab fa-twitter"></span>
+                    </a>
+                    <a href="" class="red_footer">
+                        <span class="fab fa-instagram"></span>
+                    </a>
+                    <a href="" class="red_footer">
+                        <span class="fab fa-youtube"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SCRIPTS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="plugins/swiper/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </footer>
+    
+</body>
+</html>
