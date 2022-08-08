@@ -114,44 +114,44 @@
                         <!-- Background -->
                         <rect x="0" y="0" fill="#3D4543" width="100%" height="100%" />
     
-                        <linearGradient id="gradient" x1="0%" y1="0%" x2="200%" y2="0">
-                            <stop offset="0%" style="stop-color:#008EF4;"/>
-                            <stop offset="25%" style="stop-color:#00d2e5;"/>
-                            <stop offset="50%" style="stop-color:#00E586;"/>
-                            <stop offset="75%" style="stop-color:#00d2e5;"/>
-                            <stop offset="100%" style="stop-color:#008EF4;"/>
-                            
-                        </linearGradient>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="200%" y2="0">
+                                <stop offset="0%" style="stop-color:#008EF4;"/>
+                                <stop offset="25%" style="stop-color:#00d2e5;"/>
+                                <stop offset="50%" style="stop-color:#00E586;"/>
+                                <stop offset="75%" style="stop-color:#00d2e5;"/>
+                                <stop offset="100%" style="stop-color:#008EF4;"/>
+                                
+                            </linearGradient>
                           
                           <!-- Stitch 2 gradients together for seamless animation  -->
-                        <pattern id="grad" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
+                            <pattern id="grad" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
+                                <!-- fill="url(#gradient)" -->
+                                <rect x="0" y="0" width="250%" height="100%" fill="#FFF">
+                                    <animate attributeType="XML"
+                                            attributeName="x"
+                                            from="0" to="100%"
+                                            dur="20s"
+                                            repeatCount="indefinite"/>
+                                </rect>
+                                <rect x="-250%" y="0" width="250%" height="100%" fill="#FFF">
+                                    <animate attributeType="XML"
+                                            attributeName="x"
+                                            from="-100%" to="0"
+                                            dur="20s"
+                                            repeatCount="indefinite"/>
+                                </rect>
 
-                            <rect x="0" y="0" width="250%" height="100%" fill="url(#gradient)">
-                                <animate attributeType="XML"
-                                        attributeName="x"
-                                        from="0" to="100%"
-                                        dur="20s"
-                                        repeatCount="indefinite"/>
-                            </rect>
-                            <rect x="-250%" y="0" width="250%" height="100%" fill="url(#gradient)">
-                                <animate attributeType="XML"
-                                        attributeName="x"
-                                        from="-100%" to="0"
-                                        dur="20s"
-                                        repeatCount="indefinite"/>
-                            </rect>
-
-                        </pattern>
+                            </pattern>
                         
                             
-                                <path fill="url(#grad)" d="M207.28,0C92.81,0,0,91.97,0,205.42c0,113.46,92.81,205.44,207.28,205.44c32.39,0,63.04-7.36,90.36-20.48 v-71.13c0-8.62-9.59-11.91-14.82-8.23c-21.33,15.02-47.39,23.83-75.54,23.83c-72.11,0-130.57-57.93-130.57-129.43 C76.71,133.95,135.16,76,207.28,76c70.58,0,128.08,55.5,130.51,124.85c0.06,1.53,0,3.04,0,4.57c0,1.55,0.06,3.07,0,4.58v5.22 v195.64h76.78V215.23v-9.8C414.57,91.97,321.76,0,207.28,0z"/>
-                                
-                                    <path fill="url(#grad)" d="M1664.69,308.23c-4.69-4.67-10.4-2.69-12.73-0.87c-22.18,17.23-50.12,27.49-80.48,27.49 c-37.42,0-71.15-15.58-94.96-40.56c-1.43-1.51-2.81-3.04-4.18-4.62l-76.54-84.26l16.95-18.64l57.06-62.54l9.94-10.88 c21.59-21.14,50.57-34.87,82.77-37.04c2.95-0.2,8.98-2.46,8.98-9.74V0c-61.36,0-116.49,26.42-154.44,68.4l0.02-0.02l-72.89,80.23 l-74.4-81.88l-51.63,56.82l59.41,65.38l14.96,16.44l-77.97,85.83c-0.53,0.59-1.09,1.19-1.63,1.8 c-23.86,25.73-58.11,41.85-96.15,41.85c-58.77,0-108.45-38.46-124.86-91.36h90.32v-76.11h-90.32 c16.41-52.9,66.1-91.38,124.86-91.38c26.36,0,50.88,7.78,71.4,21.1l51.71-56.92C1205.44,14.94,1162.85,0,1116.76,0 c-61.39,0-116.56,26.46-154.52,68.5l0.02-0.12L822.74,221.92l-63.01,69.37c-0.5,0.55-1,1.1-1.5,1.66 c-23.87,25.76-58.13,41.9-96.21,41.9c-72.1,0-130.59-57.93-130.59-129.43C531.43,133.95,589.91,76,662.01,76 c68.93,0,125.36,52.93,130.25,120.01l61.8-68.03C823.2,52.91,748.85,0,662.01,0C547.53,0,454.73,91.97,454.73,205.42v421.56 l71.59-78.77c0,0,5.2-5.08,5.2-13.04c0-1.42,0-170.13,0-170.13c35.62,28.64,81.04,45.82,130.49,45.82 c60.83,0,115.52-25.94,153.43-67.27h0.03l96.5-106.23c15.47,98.3,101.26,173.5,204.79,173.5c60.82,0,115.53-25.98,153.47-67.31 l0.03,0.04h0.03l73.9-81.34l72.89,80.22l0,0c37.94,41.97,93.06,68.4,154.42,68.4c53.28,0,101.87-19.94,138.61-52.68
-                                    L1664.69,308.23z"/>
+                            <path fill="url(#grad)" d="M207.28,0C92.81,0,0,91.97,0,205.42c0,113.46,92.81,205.44,207.28,205.44c32.39,0,63.04-7.36,90.36-20.48 v-71.13c0-8.62-9.59-11.91-14.82-8.23c-21.33,15.02-47.39,23.83-75.54,23.83c-72.11,0-130.57-57.93-130.57-129.43 C76.71,133.95,135.16,76,207.28,76c70.58,0,128.08,55.5,130.51,124.85c0.06,1.53,0,3.04,0,4.57c0,1.55,0.06,3.07,0,4.58v5.22 v195.64h76.78V215.23v-9.8C414.57,91.97,321.76,0,207.28,0z"/>
+                            
+                            <path fill="url(#grad)" d="M1664.69,308.23c-4.69-4.67-10.4-2.69-12.73-0.87c-22.18,17.23-50.12,27.49-80.48,27.49 c-37.42,0-71.15-15.58-94.96-40.56c-1.43-1.51-2.81-3.04-4.18-4.62l-76.54-84.26l16.95-18.64l57.06-62.54l9.94-10.88 c21.59-21.14,50.57-34.87,82.77-37.04c2.95-0.2,8.98-2.46,8.98-9.74V0c-61.36,0-116.49,26.42-154.44,68.4l0.02-0.02l-72.89,80.23 l-74.4-81.88l-51.63,56.82l59.41,65.38l14.96,16.44l-77.97,85.83c-0.53,0.59-1.09,1.19-1.63,1.8 c-23.86,25.73-58.11,41.85-96.15,41.85c-58.77,0-108.45-38.46-124.86-91.36h90.32v-76.11h-90.32 c16.41-52.9,66.1-91.38,124.86-91.38c26.36,0,50.88,7.78,71.4,21.1l51.71-56.92C1205.44,14.94,1162.85,0,1116.76,0 c-61.39,0-116.56,26.46-154.52,68.5l0.02-0.12L822.74,221.92l-63.01,69.37c-0.5,0.55-1,1.1-1.5,1.66 c-23.87,25.76-58.13,41.9-96.21,41.9c-72.1,0-130.59-57.93-130.59-129.43C531.43,133.95,589.91,76,662.01,76 c68.93,0,125.36,52.93,130.25,120.01l61.8-68.03C823.2,52.91,748.85,0,662.01,0C547.53,0,454.73,91.97,454.73,205.42v421.56 l71.59-78.77c0,0,5.2-5.08,5.2-13.04c0-1.42,0-170.13,0-170.13c35.62,28.64,81.04,45.82,130.49,45.82 c60.83,0,115.52-25.94,153.43-67.27h0.03l96.5-106.23c15.47,98.3,101.26,173.5,204.79,173.5c60.82,0,115.53-25.98,153.47-67.31 l0.03,0.04h0.03l73.9-81.34l72.89,80.22l0,0c37.94,41.97,93.06,68.4,154.42,68.4c53.28,0,101.87-19.94,138.61-52.68
+                            L1664.69,308.23z"/>
                                 
                             
                             <animate attributeType="XML" attributeName="x" from="-150%" to="0" dur="20s" repeatCount="indefinite"/>
-                        
+                        </rect>
                     </svg>
                     
                 </picture>
@@ -185,7 +185,7 @@
                         </a>
                     </div>
                     <div class="img_hero">
-                        <img width="750" height="568" src="images/img_header.jpg" alt="">
+                        <img width="750" height="568" src="images/img_apex_header.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -362,36 +362,63 @@
     <footer>
 
         <div class="center">
-            <div class="footer">
-                <picture>
-                    <img width="154" height="54" src="images/logo_footer.svg" alt="">
-                </picture>
-                <h1>Sabemos entender, diseñar y gestionar las mejores experiencias de tus usuarios, aumentando la satisfacción del cliente, la lealtad de marca, y los ingresos de las compañías que nos confían a sus clientes.
-                </h1>
-                <a href="" class="btn verde">
-                    CONTÁCTANOS
-                </a>
-            </div>
-            <div class="sub_footer">
-                <h5>Siguenos en nuestras redes:</h5>
-                <div class="redes_footer">
-                    <a href="" class="red_footer">
-                        <span class="fab fa-linkedin-in"></span>
-                    </a>
-                    <a href="" class="red_footer">
-                        <span class="fab fa-facebook-f"></span>
-                    </a>
-                    <a href="" class="red_footer">
-                        <span class="fab fa-twitter"></span>
-                    </a>
-                    <a href="" class="red_footer">
-                        <span class="fab fa-instagram"></span>
-                    </a>
-                    <a href="" class="red_footer">
-                        <span class="fab fa-youtube"></span>
-                    </a>
+            <div class="c_footer">
+
+                <div class="footer">
+                    <picture>
+                        <img width="154" height="54" src="images/logo_footer.svg" alt="">
+                    </picture>
+                    <h1>Sabemos entender, diseñar y gestionar las mejores experiencias de tus usuarios, aumentando la satisfacción del cliente, la lealtad de marca, y los ingresos de las compañías que nos confían a sus clientes.
+                    </h1>
+                    
+                </div>
+                <div class="cont_f_submenu">
+                    <h5>Navegación</h5>
+                    <nav class="nav_footer">
+                        <ul>
+                            <li>
+                                <a target="_blank" href="https://apexamericacolombia.com/">Home</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://apexamericacolombia.com/blog">Blog</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="">Servicios</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="">Sumate</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="">Contacto</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="">Negocios responsables</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="cont_f_redes">
+                    <h5>Siguenos en nuestras redes:</h5>
+                    <div class="redes_footer">
+                        <a href="" class="red_footer">
+                            <span class="fab fa-linkedin-in"></span>
+                        </a>
+                        <a href="" class="red_footer">
+                            <span class="fab fa-facebook-f"></span>
+                        </a>
+                        <a href="" class="red_footer">
+                            <span class="fab fa-twitter"></span>
+                        </a>
+                        <a href="" class="red_footer">
+                            <span class="fab fa-instagram"></span>
+                        </a>
+                        <a href="" class="red_footer">
+                            <span class="fab fa-youtube"></span>
+                        </a>
+                    </div>
                 </div>
             </div>
+            
         </div>
         
         <!-- SCRIPTS -->
